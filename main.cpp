@@ -347,7 +347,7 @@ int main(void)
 		0.0, 0.0, 1.0, -6.0,
 		0.0, 0.0, 0.0, 1.0
 	};
-	loadOBJ("C:\\RayTracerFromScratch\\teapot.obj", DIFFUSE, 0.0, vec3(0.8, 0.5, 0.1), mat4);
+	loadOBJ("teapot.obj", DIFFUSE, 0.0, vec3(0.8, 0.5, 0.1), mat4);
 	std::clock_t beforePopulation = std::clock();
 	populateBVH();
 	std::clock_t afterPopulation = std::clock();
