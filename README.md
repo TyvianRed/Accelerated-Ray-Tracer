@@ -17,3 +17,4 @@ You need to add PATH=%PATH%;$(ProjectDir)lib\x64 (x86 or arm64 depending on your
 - [Fast, Minimum Storage Ray/Triangle Intersection](https://cadxfem.org/inf/Fast%20MinimumStorage%20RayTriangle%20Intersection.pdf)
 - [SDL3 Wiki](https://wiki.libsdl.org/SDL3/FrontPage)
 - [Ray Tracing in One Weekend Series](https://github.com/RayTracing/raytracing.github.io/)
+- [Ray - Box Intersection](https://education.siggraph.org/static/HyperGraph/raytrace/rtinter3.htm)
