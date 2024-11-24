@@ -5,6 +5,7 @@ This ray tracer uses BVH and parallel execution policy to output this cool scene
 # Build
 You need to add PATH=%PATH%;$(ProjectDir)lib\x64 (x86 or arm64 depending on your platform) to the enviornment variable. If your platform isn't x64, you need to adjust include and library directories as well.
 # External dependencies
+- [Teapot model](https://raw.githubusercontent.com/UIllinoisGraphics/CS296/master/Meshes/teapot.obj)
 - [SDL3](https://github.com/libsdl-org/SDL/releases/tag/preview-3.1.3) for window creation
 - [vec3.h from Ray Tracing in One Weekend series](https://github.com/RayTracing/raytracing.github.io/blob/release/src/InOneWeekend/vec3.h) for vector math
 # Some cool resources I consulted for this project
