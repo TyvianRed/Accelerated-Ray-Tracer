@@ -196,7 +196,7 @@ typedef struct intersected {
 
 void getDiffuseColor(unsigned int depth, intersected_t* const intersectedPoint, color_t* const outColorPtr);
 void getReflectColor(vec3* const rayDirPtr, unsigned int depth, intersected_t* const intersectedPoint, color_t* const outColorPtr);
-void getFrenselColor(vec3* const rayDirPtr, unsigned int depth, intersected_t* const intersectedPoint, color_t* const outColorPtr);
+void getFresnelColor(vec3* const rayDirPtr, unsigned int depth, intersected_t* const intersectedPoint, color_t* const outColorPtr);
 
 const unsigned int SAMPLES_PER_PIXEL = 4;
 const double INV_SAMPLES_PER_PIXEL = 1.0 / SAMPLES_PER_PIXEL;
@@ -802,7 +802,7 @@ void getReflectColor(vec3* const rayDirPtr, unsigned int depth, intersected_t* c
 	}
 }
 
-void getFrenselColor(vec3* const rayDirPtr, unsigned int depth, intersected_t* const intersectedPoint, color_t* const outColorPtr)
+void getFresnelColor(vec3* const rayDirPtr, unsigned int depth, intersected_t* const intersectedPoint, color_t* const outColorPtr)
 {
 	double etai = 1.0;
 	double etat = intersectedPoint->ior;
@@ -993,7 +993,7 @@ void castRay(vec3* const rayOrigPtr, vec3* const rayDirPtr, color_t* const outCo
 	}
 	else if (GLASS == intersectedPoint.materialType)
 	{
-		getFrenselColor(rayDirPtr, depth, &intersectedPoint, outColorPtr);
+		getFresnelColor(rayDirPtr, depth, &intersectedPoint, outColorPtr);
 	}
 }
 
